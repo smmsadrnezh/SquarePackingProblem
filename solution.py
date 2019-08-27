@@ -1,3 +1,6 @@
+import numpy as np
+
+
 def solution(n, squares):
     big_square = [[-1] * n for _ in range(n)]
 
@@ -35,4 +38,4 @@ def solution(n, squares):
             else:
                 return 'No Possible Answer For The Given Input.'
 
-    return big_square
+    return np.matrix(big_square)
