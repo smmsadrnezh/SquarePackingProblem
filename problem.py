@@ -4,7 +4,8 @@ class Square:
         self.used = False
 
     def __repr__(self):
-        return '{} {} {} {}'.format(self.dents['up'], self.dents['right'], self.dents['down'], self.dents['left'])
+        return '({:02d}, {:02d}, {:02d}, {:02d})'.format(self.dents['up'], self.dents['right'], self.dents['down'],
+                                                         self.dents['left'])
 
 
 def problem():
