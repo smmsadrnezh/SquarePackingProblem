@@ -1,6 +1,3 @@
-import numpy as np
-
-
 def solution(n, squares):
     big_square = [[-1] * n for _ in range(n)]
 
@@ -36,6 +33,6 @@ def solution(n, squares):
                         big_square[row][column] = square
                         break
             else:
-                return 'No Possible Answer For The Given Input'
+                return 'No Possible Answer For The Given Input.'
 
-    return np.matrix(big_square)
+    return big_square
